@@ -1,2 +1,3 @@
-# p1-quicksort-NDmitriy98
-p1-quicksort-NDmitriy98 created by GitHub Classroom
+# P2 Containers Дмитрий Нахабин
+Цель для запуска: p2_containers
+
