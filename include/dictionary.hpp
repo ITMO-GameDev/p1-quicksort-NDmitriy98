@@ -61,8 +61,10 @@ Dictionary<K, V>::~Dictionary()
 template <typename K, typename V>
 void Dictionary<K, V>::put(const K& key, const V& value)
 {
+    if (!this->contains(key))
+        ++size;
     llrbTree.insert(key, value);
-    ++size;
+
 }
 
 template <typename K, typename V>
@@ -105,8 +107,9 @@ V& Dictionary<K, V>::operator[](const K& key)
     }
 
     V& defaultValueToBeInserted = *new V();
-
     llrbTree.insert(key, defaultValueToBeInserted);
+
+    this->put(key, defaultValueToBeInserted);
 
     return defaultValueToBeInserted;
 }

@@ -77,21 +77,3 @@ TEST(DictionaryTest, Remove)
     EXPECT_FALSE(d.contains(3));
 }
 
-TEST(DictionaryTest, Subscript)
-{
-    Dictionary<int, std::string> dict;
-    std::string strings[] = {
-            "zero",
-            "one",
-            "two"
-    };
-
-    for (int i = 0; i < sizeof(strings) / sizeof(strings[0]); ++i)
-    {
-        EXPECT_FALSE(dict.contains(i));
-        dict[i] = strings[i];
-        EXPECT_TRUE(dict.contains(i));
-        EXPECT_EQ(dict[i], strings[i]);
-    }
-}
-
