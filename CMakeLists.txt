@@ -25,6 +25,7 @@ include_directories(include)
 #
 add_executable(p1_quicksort src/sort.cpp include/sort.h test/test.cpp)
 add_executable(p2_containers src/array.cpp include/array.hpp test/test2.cpp)
+add_executable(p3_search include/LLRBTree.hpp src/dictionary.cpp include/dictionary.hpp test/test3.cpp)
 
 
 ## Add cmake target dependencies of the executable
@@ -35,6 +36,7 @@ add_executable(p2_containers src/array.cpp include/array.hpp test/test2.cpp)
 
 target_link_libraries(p1_quicksort gtest gtest_main)
 target_link_libraries(p2_containers gtest gtest_main)
+target_link_libraries(p3_search gtest gtest_main)
 
 #############
 ## Install ##
