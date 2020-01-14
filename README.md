@@ -1,12 +1,4 @@
-# P3 Search Дмитрий Нахабин
-Цель для запуска: p3_search
+# P3 Memory Allocation Дмитрий Нахабин
+Цель для запуска: p4_memory_management
 
-**Файлы**
 
-./include/dictionary.hpp
-
-./include/LLRBTree.hpp
-
-./src/dictionary.cpp
-
-./test/test3.cpp
